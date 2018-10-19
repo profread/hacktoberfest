@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <style>
-	#bgm{
-    background-color:red;
+	#bgm {
+    background-color: red;
 }
 
-#Time{
-    text-align:center;
-    font-family:sans-serif;
-    color:black;
-    letter-spacing:3px;
-    font-size:90px;
-    text-shadow:8px 5px 30px grey; 
+#Time {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 90px;
+    text-shadow: 8px 5px 30px grey; 
     position: absolute;
     width: 100px;
     height: 50px;
@@ -28,19 +28,19 @@ printTime();
 };
 
 function printTime() {
-    var d = new Date();
+    var d = newDate();
     var hours = d.getHours();
     var mins = d.getMinutes();
     var secs = d.getSeconds();
     
-        if(hours<10){
+        if (hours < 10){
             hours = "0" + hours;
         }
-        if(mins<10){
+        if (mins < 10){
             
             mins = "0" + mins;
         }
-        if(secs<10){
+        if (secs < 10){
 
             secs = "0" + secs;
         }
